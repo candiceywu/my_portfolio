@@ -6,114 +6,34 @@
 
 body {
     margin: 0;
-    display: flex;
     flex-flow: column wrap;
     min-height: 50vh;
-    justify-content: flex-start;
 }
 
-.header {
-    display: flex;
-    padding: 40px;
-    border:rgb(225, 161, 52) solid 1px;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.header h1 {
-    font-size: 68px;
-}
-
-.header nav {
-    padding: 20px;
-    font-size: 24px;
-}
-
-.header nav ul {
-    list-style: none;
-}
-
-.header nav ul li {
-    display: inline-block;
-    padding: 0px 60px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.about {
+.header, .contact {
     display: flex;
     flex-wrap: wrap;
     padding: 40px;
-    border:rgb(225, 161, 52) solid 1px;
-}
-
-.about .heading h1 {
-    display: flex;
-    align-items: flex-start;
-    font-size: 68px;
-}
-
-.about .blurb {
-    display: flex;
-    font-size: 18px;
-}
-
-.work {
-    display: flex;
-    padding: 40px;
-    border:rgb(225, 161, 52) solid 1px;
-}
-
-.work h1 {
-    font-size: 68px;
-    padding: 10px 10px;
-}
-
-.projects {
-    display: flex;
-    padding: 60px;
-    border:rgb(225, 161, 52) solid 1px;
-}
-
-.projects .project-1 {
-    display: flex;
-    border:rgb(225, 161, 52) solid 1px;
-}
-
-.projects .project-2 {
-    display: flex;
-    border:rgb(225, 161, 52) solid 1px;
-}
-
-.projects .project-3 {
-    display: flex;
-    border:rgb(225, 161, 52) solid 1px;
-}
-
-.contact {
-    display: flex;
-    padding: 40px;
+    margin: 40px;
     border:rgb(225, 161, 52) solid 1px;
     justify-content: space-between;
     align-items: baseline;
 }
 
-.contact h1 {
+.header h1, .contact h1 {
     font-size: 68px;
 }
 
-.contact nav {
+.header nav, .contact nav {
     padding: 20px;
     font-size: 24px;
 }
 
-.contact nav ul {
+.header nav ul, .contact nav ul {
     list-style: none;
 }
 
-.contact nav ul li {
+.header nav ul li, .contact nav ul li {
     display: inline-block;
     padding: 0px 60px;
 }
@@ -121,3 +41,56 @@ a {
 a {
     text-decoration: none;
 }
+
+.about, .work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: top;
+    padding: 40px;
+    margin: 40px;
+    border:rgb(225, 161, 52) solid 1px;
+}
+
+.heading h1 {
+    display: flex;
+    font-size: 68px;
+    width: 500px;
+    height: 300px;
+
+}
+
+.about .blurb, .work .project-1, .project-2, .project-3 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    width: 1000px;
+    border:rgb(225, 161, 52) solid 1px;
+}
+
+.work .project-1 img {
+    max-width:100%;
+    display: flex;
+}
+
+.work .project-2 img, .project-3 img {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  /* Desktops */
+@media screen and (max-width: 992px) {
+  
+  }
+  
+  /* Large smartphones */
+  @media screen and (max-width: 768px) {
+    
+   
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+  
+  }
