@@ -1,56 +1,123 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    background-color: rgb(169, 92, 104);
+    color:rgb(225, 182, 52);
 }
 
 body {
-    background-color: #a95c68ff;
-    color: #ebbe3a;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 50vh;
+    justify-content: flex-start;
 }
 
 .header {
-    padding: 20px;
-    font-family: 
-    background-color: ;
-    color: ;
+    display: flex;
+    padding: 40px;
+    border:rgb(225, 161, 52) solid 1px;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .header h1 {
-    display: inline-block;
-    font-size: 48px;
-    color: ;
+    font-size: 68px;
 }
 
 .header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    padding: 20px;
+    font-size: 24px;
 }
 
 .header nav ul {
-    list-style-type: none;
+    list-style: none;
 }
 
 .header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    padding: 0px 60px;
 }
 
 a {
-    color: #ffffff;
     text-decoration: none;
-
 }
 
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    border:rgb(225, 161, 52) solid 1px;
+}
 
-.hero {
-        height: 800px;
-        width: 100%;
-        margin-bottom: 25px;
-        background-image: url("INSERT PHOTO");
-        background-size: cover;
-        background-position: center;
+.about .heading h1 {
+    display: flex;
+    align-items: flex-start;
+    font-size: 68px;
+}
+
+.about .blurb {
+    display: flex;
+    font-size: 18px;
+}
+
+.work {
+    display: flex;
+    padding: 40px;
+    border:rgb(225, 161, 52) solid 1px;
+}
+
+.work h1 {
+    font-size: 68px;
+    padding: 10px 10px;
+}
+
+.projects {
+    display: flex;
+    padding: 60px;
+    border:rgb(225, 161, 52) solid 1px;
+}
+
+.projects .project-1 {
+    display: flex;
+    border:rgb(225, 161, 52) solid 1px;
+}
+
+.projects .project-2 {
+    display: flex;
+    border:rgb(225, 161, 52) solid 1px;
+}
+
+.projects .project-3 {
+    display: flex;
+    border:rgb(225, 161, 52) solid 1px;
+}
+
+.contact {
+    display: flex;
+    padding: 40px;
+    border:rgb(225, 161, 52) solid 1px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.contact h1 {
+    font-size: 68px;
+}
+
+.contact nav {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.contact nav ul {
+    list-style: none;
+}
+
+.contact nav ul li {
+    display: inline-block;
+    padding: 0px 60px;
+}
+
+a {
+    text-decoration: none;
 }
