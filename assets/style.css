@@ -9,6 +9,11 @@ body {
     min-height: 50vh;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .header, .contact {
     display: flex;
     flex-wrap: wrap;
@@ -43,8 +48,9 @@ a {
 
 .about, .work {
     display: flex;
-    flex-wrap: wrap;
     align-items: top;
+    flex-wrap: wrap;
+    flex: 1 1 0;
     padding: 40px;
     margin: 40px;
     border:rgb(225, 161, 52) solid 1px;
@@ -55,7 +61,6 @@ a {
     font-size: 68px;
     width: 600px;
     height: 300px;
-
 }
 
 .about .blurb {
@@ -67,46 +72,40 @@ a {
 
 }
 
+.about .blurb p {
+    padding: 30px 0px 0px 0px;
+}
+
 .work .project-large {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-    width: 900px;
-    border:rgb(225, 161, 52) solid 1px;
+    text-align: center;
+    font-size: 18px;
 }
 
 .work .project-large header {
-    display: flex;
     padding: 5px;
 }
 
 .work .project-large img {
-    display: flex;
     min-width: 50%;
     max-width:100%;
     width: 900px;
+    border:rgb(225, 161, 52) solid 1px;
 }
 
 .work .project-small {
-    display: flex;
-    flex-wrap: inline-wrap;
-    font-size: 20px;
-    width: 900px;
-    border:rgb(225, 161, 52) solid 1px;
-    min-width: 50%;
-    max-width: 100%;
+    text-align: center;
+    font-size: 18px;
 }
 
 .work .project-small header {
-    display: flex;
     padding: 5px;
 }
 
 .work .project-small img {
-    display: flex;
     min-width: 25%;
     max-width:50%;
     width: 900px;
+    border:rgb(225, 161, 52) solid 1px;
 }
 
 .work .project-large img:hover {
@@ -118,18 +117,54 @@ a {
 
   /* Desktops */
 @media screen and (max-width: 992px) {
-  body {
+    body {
       flex-direction: column;
   }
   }
   
   /* Large smartphones */
   @media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    } 
+
+    .header h1, .contact h1 {
+        font-size: 58px;
+    }
     
+    .header nav, .contact nav {
+        font-size: 16px;
+    }
+    
+    .header nav ul, .contact nav ul {
+        list-style: none;
+    }
+    
+    .header nav ul li, .contact nav ul li {
+        display: inline;
+    }
    
   }
   
-  /* Small smartphones - image placeholders change color */
+  /* Small smartphones */
   @media screen and (max-width: 576px) {
-  
+    body {
+        flex-direction: column;
+    }
+    .header h1, .contact h1 {
+        font-size: 48px;
+    }
+    
+    .header nav, .contact nav {
+        font-size: 16px;
+    }
+    
+    .header nav ul, .contact nav ul {
+        list-style: none;
+    }
+    
+    .header nav ul li, .contact nav ul li {
+        display: block;
+        text-indent: -75px;
+    }
   }
