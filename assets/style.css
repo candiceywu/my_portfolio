@@ -6,7 +6,6 @@
 
 body {
     margin: 0;
-    flex-flow: column wrap;
     min-height: 50vh;
 }
 
@@ -45,7 +44,6 @@ a {
 .about, .work {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: top;
     padding: 40px;
     margin: 40px;
@@ -55,33 +53,74 @@ a {
 .heading h1 {
     display: flex;
     font-size: 68px;
-    width: 500px;
+    width: 600px;
     height: 300px;
 
 }
 
-.about .blurb, .work .project-1, .project-2, .project-3 {
+.about .blurb {
     display: flex;
     flex-wrap: wrap;
     font-size: 20px;
-    width: 1000px;
+    width: 900px;
+    border:rgb(225, 161, 52) solid 1px;
+
+}
+
+.work .project-large {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    width: 900px;
     border:rgb(225, 161, 52) solid 1px;
 }
 
-.work .project-1 img {
-    max-width:100%;
+.work .project-large header {
     display: flex;
+    padding: 5px;
 }
 
-.work .project-2 img, .project-3 img {
-    width: 50%;
+.work .project-large img {
     display: flex;
-    flex-wrap: wrap;
+    min-width: 50%;
+    max-width:100%;
+    width: 900px;
+}
+
+.work .project-small {
+    display: flex;
+    flex-wrap: inline-wrap;
+    font-size: 20px;
+    width: 900px;
+    border:rgb(225, 161, 52) solid 1px;
+    min-width: 50%;
+    max-width: 100%;
+}
+
+.work .project-small header {
+    display: flex;
+    padding: 5px;
+}
+
+.work .project-small img {
+    display: flex;
+    min-width: 25%;
+    max-width:50%;
+    width: 900px;
+}
+
+.work .project-large img:hover {
+    opacity: 0.7;
+}
+.work .project-small img:hover {
+    opacity: 0.7;
 }
 
   /* Desktops */
 @media screen and (max-width: 992px) {
-  
+  body {
+      flex-direction: column;
+  }
   }
   
   /* Large smartphones */
