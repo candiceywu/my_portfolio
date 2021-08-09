@@ -21,7 +21,6 @@ main {
     margin: 40px;
     justify-content:space-between;
     border:rgb(225, 161, 52) solid 1px;
-    align-items: baseline;
 }
 
 .header h1, .contact h1 {
@@ -46,11 +45,11 @@ a {
     text-decoration: none;
 }
 
+
 .about, .work {
     display: flex;
     align-items: top;
     flex-wrap: wrap;
-    flex: 1 1 0;
     padding: 40px;
     margin: 40px;
     border:rgb(225, 161, 52) solid 1px;
@@ -64,32 +63,32 @@ a {
     border:rgb(225, 161, 52) solid 1px;
 }
 
-.about .blurb {
+.blurb, .projects {
     display: flex;
     flex-wrap: wrap;
     font-size: 20px;
-    width: 900px;
+    width: 40%;
     border:rgb(225, 161, 52) solid 1px;
     padding: 30px 0px 0px 0px;
 }
 
-.work .project-large {
+.projects .project-large {
     text-align: center;
     font-size: 18px;
 }
 
-.work .project-large header {
+.projects .project-large header {
     padding: 5px;
 }
 
-.work .project-large img {
+.projects .project-large img {
     min-width: 50%;
     max-width:100%;
     width: 900px;
     border:rgb(225, 161, 52) solid 1px;
 }
 
-.work .project-small {
+.projects .project-small {
     text-align: center;
     font-size: 18px;
 }
@@ -115,7 +114,7 @@ a {
   /* Desktops */
 @media screen and (max-width: 992px) {
     body {
-      flex-direction: column;
+      flex-direction: row;
     }
   }
   
