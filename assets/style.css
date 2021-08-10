@@ -6,7 +6,6 @@
 
 body {
     margin: 0;
-    min-height: 50vh;
 }
 
 main {
@@ -49,6 +48,7 @@ a {
 .about, .work {
     display: flex;
     align-items: top;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 40px;
     margin: 40px;
@@ -63,51 +63,46 @@ a {
     border:rgb(225, 161, 52) solid 1px;
 }
 
-.blurb, .projects {
+.about .blurb, .projects {
     display: flex;
     flex-wrap: wrap;
     font-size: 20px;
-    width: 40%;
+    width: 50%;
     border:rgb(225, 161, 52) solid 1px;
-    padding: 30px 0px 0px 0px;
 }
 
-.projects .project-large {
+.blurb p {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: flex-start;
+    font-size: 20px;
+    padding: 40px 0px;
+    border:rgb(225, 161, 52) solid 1px;
+}
+
+.projects header {    
+    padding: 20px;
     text-align: center;
-    font-size: 18px;
-}
-
-.projects .project-large header {
-    padding: 5px;
+    border:rgb(225, 161, 52) solid 1px;
 }
 
 .projects .project-large img {
-    min-width: 50%;
-    max-width:100%;
-    width: 900px;
+    width: 100%;
+    min-width:50%;
     border:rgb(225, 161, 52) solid 1px;
 }
 
-.projects .project-small {
-    text-align: center;
-    font-size: 18px;
-}
-
-.work .project-small header {
-    padding: 5px;
-}
-
-.work .project-small img {
-    min-width: 25%;
-    max-width:50%;
-    width: 900px;
+.projects .project-small img {
+    width: 50%;
+    min-width:25%;
     border:rgb(225, 161, 52) solid 1px;
 }
 
-.work .project-large img:hover {
+.projects .project-large img:hover {
     opacity: 0.7;
 }
-.work .project-small img:hover {
+
+.projects .project-small img:hover {
     opacity: 0.7;
 }
 
@@ -127,8 +122,8 @@ a {
     .heading h1 {
         display: flex;
         font-size: 58px;
-        width: 600px;
-        height: 300px;
+        width: 400px;
+        height: 200px;
     }
 
     .header h1, .contact h1 {
@@ -157,8 +152,8 @@ a {
     .heading h1 {
         display: flex;
         font-size: 48px;
-        width: 600px;
-        height: 300px;
+        width: 200px;
+        height: 100px;
     }
 
     .header h1, .contact h1 {
@@ -177,4 +172,5 @@ a {
         display: block;
         text-indent: -75px;
     }
+
     }
