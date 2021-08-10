@@ -6,7 +6,7 @@ This application is first my professional portfolio. It includes some informatio
 The portfolio also includes my contact information via LinkedIn, Github, and my personal email address.
 
 ## Installation
-For installation and deployment, please [click here](https://candiceywu.github.io/my_portfolio/). The application should launch and all links within it are active. 
+For installation and deployment, please [click here](https://candiceywu.github.io/my_portfolio/). The application should launch and all links within it are active. The application is responsive.
 
 ## Usage
 The application includes navigation links at the top that provide ease of use for redirecting to other sections below (specifically, to the 'about' and 'work' sections). The Horiseon application (large image under 'work') will open to a new tab with a previous homework assignment. Applications 2-5 do not work yet, but I'll be updating these with clickable links as the bootcamp progresses and I have more to add to my portfolio. The following image shows the web application's appearance:
