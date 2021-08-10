@@ -53,18 +53,20 @@ a {
     border:rgb(225, 161, 52) solid 1px;
 }
 
+.heading {
+    flex: 1 0 50%;
+}
+
 .heading h1 {
-    display: flex;
     font-size: 68px;
-    width: 600px;
     height: 300px;
     border:rgb(225, 161, 52) solid 1px;
 }
 
-.about .blurb, .work .project-large {
+.about .blurb, .work .projects {
     display: flex;
     flex-wrap: wrap;
-    font-size: 20px;
+    flex: 1 0 50%;
     width: 50%;
     border:rgb(225, 161, 52) solid 1px;
 }
@@ -73,54 +75,64 @@ a {
     display: flex;
     flex-wrap: wrap;
     text-align: flex-start;
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 1.5;
     padding: 40px 0px;
     border:rgb(225, 161, 52) solid 1px;
 }
 
-.work header {    
+.work .projects header {    
     padding: 20px;
+    font-size: 24px;
+    text-align: center;
     border:rgb(225, 161, 52) solid 1px;
 }
 
-.work .project-large img {
+.work .projects .app-large {
     width: 100%;
     min-width:50%;
+    transition: width 0.5s linear;
     border:rgb(225, 161, 52) solid 1px;
 }
 
-.work .project-small img {
+.work .projects .app-small {
+    flex: 1 0 50%;
     width: 50%;
     min-width:25%;
-    justify-content: flex-end;
     border:rgb(225, 161, 52) solid 1px;
 }
 
-.work .project-large img:hover {
+.work .projects .app-large img:hover {
     opacity: 0.7;
 }
 
-.work .project-small img:hover {
+.work .projects .app-small img:hover {
     opacity: 0.7;
 }
 
-  /* Desktops */
-@media screen and (max-width: 992px) {
-    body {
-      flex-direction: row;
-    }
-  }
   
   /* Large smartphones */
   @media screen and (max-width: 768px) {
     body {
-        flex-direction: column;
-    } 
+        margin: 0;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .heading {
+        flex: 1 0 100%;
+    }
 
     .heading h1 {
         display: flex;
         font-size: 58px;
-        width: 400px;
+        width: 100%;
         height: 200px;
     }
 
@@ -139,18 +151,52 @@ a {
     .header nav ul li, .contact nav ul li {
         display: inline;
     }
+
+    .work .projects header {    
+        padding: 15px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .about .blurb p {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: flex-start;
+        font-size: 20px;
+        padding: 30px 0px;
+    }
+
+    .work .projects .app-large {
+        width: 100%;
+        min-width:50%;
+        transition: width 0.5s linear;
+    }
+
     }
   
   /* Small smartphones */
   @media screen and (max-width: 576px) {
+    
     body {
-        flex-direction: column;
+        margin: 0;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .heading {
+        flex: 1 0 100%;
     }
 
     .heading h1 {
         display: flex;
         font-size: 48px;
-        width: 200px;
+        width: 100%;
         height: 100px;
     }
 
@@ -171,4 +217,23 @@ a {
         text-indent: -75px;
     }
 
+    .work .projects header {    
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .about .blurb p {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: flex-start;
+        font-size: 18px;
+        padding: 20px 0px;
+    }
+
+    .work .projects .app-large {
+        width: 100%;
+        min-width:50%;
+        transition: width 0.5s linear;
+    }
     } 
