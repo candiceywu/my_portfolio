@@ -19,10 +19,14 @@ main {
     padding: 40px;
     margin: 40px;
     justify-content:space-between;
+    align-items: flex-end;
 }
 
 .header h1, .contact h1 {
     font-size: 68px;
+    /* padding: 20px; */
+    /* padding: 40px;
+    margin: 40px; */
 }
 
 .header nav, .contact nav {
@@ -103,36 +107,32 @@ a {
     opacity: 0.7;
 }
 
-  /* Large smartphones */
-  @media screen and (max-width: 768px) {
-    body {
-        margin: 0;
-    }
+
+/* Large smartphones */
+  @media screen and (max-width: 768px){
 
     main {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 20px;
-        margin: 20px;
     }
-
-    .heading {
-        flex: 1 0 100%;
-    }
-
-    .heading h1 {
+    
+    .header, .contact {
         display: flex;
-        font-size: 58px;
-        width: 100%;
-        height: 200px;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin: 10px;
+        justify-content:space-between;
     }
-
+    
     .header h1, .contact h1 {
-        font-size: 58px;
+        font-size: 26px;
+        padding: 10px;
+        margin: 10px;
     }
     
     .header nav, .contact nav {
+        padding: 10px;
+        margin: 10px;
         font-size: 16px;
     }
     
@@ -141,63 +141,105 @@ a {
     }
     
     .header nav ul li, .contact nav ul li {
-        display: inline;
+        display: inline-block;
+        padding: 0px 20px;
     }
-
-    .work .projects header {    
-        padding: 15px;
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .about .blurb p {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: flex-start;
-        font-size: 20px;
-        padding: 30px 0px;
-    }
-
-    .work .projects .app-large {
-        width: 100%;
-        min-width:50%;
-        transition: width 0.5s linear;
-    }
-
-    }
-  
-  /* Small smartphones */
-  @media screen and (max-width: 576px) {
     
-    body {
-        margin: 0;
+    a {
+        text-decoration: none;
     }
-
-    main {
+    
+    .about, .work {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 10px;
         margin: 10px;
     }
-
+    
     .heading {
-        flex: 1 0 100%;
+        flex: 1 0 50%;
     }
-
+    
     .heading h1 {
-        display: flex;
-        font-size: 48px;
-        width: 100%;
+        font-size: 20px;
         height: 100px;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .about .blurb, .work .projects {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 0 50%;
+        width: 50%;
+    }
+    
+    .about .blurb p {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: flex-start;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 10px 0px;
+    }
+    
+    .work .projects header {    
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .work .projects .app-large {
+        width: 100%;
+        min-width:50%;
+        transition: width 0.5s linear;
+    }
+    
+    .work .projects .app-small {
+        flex: 1 0 50%;
+        width: 50%;
+        min-width:25%;
+        padding: 5px;
+    }
+    
+    .work .projects .app-large img:hover {
+        opacity: 0.7;
+    }
+    
+    .work .projects .app-small img:hover {
+        opacity: 0.7;
     }
 
+  }
+
+
+
+  /* Small smartphones */
+  @media screen and (max-width: 576px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .header, .contact {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        margin: 5px;
+        justify-content:space-between;
+    }
+    
     .header h1, .contact h1 {
-        font-size: 48px;
+        font-size: 16px;
+        padding: 5px;
+        margin: 5px;
     }
     
     .header nav, .contact nav {
-        font-size: 16px;
+        padding: 5px;
+        margin: 5px;
+        font-size: 10px;
     }
     
     .header nav ul, .contact nav ul {
@@ -205,27 +247,76 @@ a {
     }
     
     .header nav ul li, .contact nav ul li {
-        display: block;
-        text-indent: -75px;
+        display: inline-block;
+        padding: 0px 5px;
     }
-
-    .work .projects header {    
-        padding: 10px;
-        font-size: 16px;
-        text-align: center;
+    
+    a {
+        text-decoration: none;
     }
-
+    
+    .about, .work {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .heading {
+        flex: 1 0 50%;
+    }
+    
+    .heading h1 {
+        font-size: 14px;
+        height: 100px;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .about .blurb, .work .projects {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 0 50%;
+        width: 50%;
+    }
+    
     .about .blurb p {
         display: flex;
         flex-wrap: wrap;
         text-align: flex-start;
-        font-size: 18px;
-        padding: 20px 0px;
+        font-size: 10px;
+        line-height: 1.5;
+        padding: 5px 0px;
     }
-
+    
+    .work .projects header {    
+        padding: 5px;
+        font-size: 10px;
+        text-align: center;
+    }
+    
     .work .projects .app-large {
         width: 100%;
         min-width:50%;
         transition: width 0.5s linear;
     }
-    } 
+    
+    .work .projects .app-small {
+        flex: 1 0 50%;
+        width: 50%;
+        min-width:25%;
+        padding: 5px;
+    }
+    
+    .work .projects .app-large img:hover {
+        opacity: 0.7;
+    }
+    
+    .work .projects .app-small img:hover {
+        opacity: 0.7;
+    }
+
+  }
+
+
