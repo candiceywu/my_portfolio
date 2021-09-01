@@ -27,8 +27,8 @@ main {
 }
 
 .header nav, .contact nav {
-    padding: 40px;
-    margin: 40px;
+    padding: 30px;
+    margin: 30px;
     font-size: 24px;
 }
 
@@ -37,8 +37,8 @@ main {
 }
 
 .header nav ul li, .contact nav ul li {
-    display: inline-block;
-    padding: 0px 60px;
+    display: inline;
+    padding: 0px 40px;
 }
 
 a {
