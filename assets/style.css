@@ -106,7 +106,7 @@ a {
     justify-content: space-between;
     min-width:25%;
     font-size: 16px;
-    padding: 40px 0px 15px 15px;
+    padding: 40px 15px 15px 15px;
 }
 
 /* .work .projects .app-large img:hover {
@@ -221,7 +221,7 @@ a {
         justify-content: space-between;
         min-width:25%;
         font-size: 14px;
-        padding: 20px 0px 10px 10px;
+        padding: 20px 10px 10px 10px;
     }
     
     /* .work .projects .app-large img:hover {
@@ -247,7 +247,7 @@ a {
         display: flex;
         flex-wrap: inline-block;
         justify-content: space-around;
-        font-size:  12px;
+        font-size:  8px;
         align-items: center;
         padding: 5px;
     }
@@ -322,7 +322,7 @@ a {
     
     .work .projects header {    
         padding: 10px 5px 5px 5px;
-        font-size: 10px;
+        font-size: 8px;
         text-align: center;
     }
     
@@ -339,7 +339,7 @@ a {
         justify-content: space-between;
         min-width:25%;
         font-size: 12px;
-        padding: 10px 0px 5px 5px;
+        padding: 10px 3px 3px 3px;
     }
     
     /* .work .projects .app-large img:hover {
