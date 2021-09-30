@@ -13,6 +13,13 @@ main {
     flex-wrap: wrap;
 }
 
+
+/* Resize images
+.container img {
+    width: 100%;
+    height: auto;
+} */
+
 .links {
     display: flex;
     flex-wrap: inline-block;
@@ -89,7 +96,8 @@ a {
 
 .work .projects header {    
     padding: 30px 10px 5px 10px;
-    font-size: 24px;
+    font-size: 26px;
+    /* font-weight: bold; */
     text-align: center;
 }
 
